@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/notebook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+       <h2 class="heading">INFINTE INSIGHTS</h2>
+       <div class="para"><p class="para" id="targetParagraph">Your Journey Into Infinite Insights Begins Here. Explore The Bundless World Of Mathematics.</p></div>
+    </header>
+    <script>
+        
+        var paragraph = document.getElementById('targetParagraph');
+    
+        
+        var words = paragraph.textContent.split(' ');
+    
+        
+        var coloredText = words.map(function(word) {
+          var firstLetter = word.charAt(0);
+          var restOfWord = word.slice(1);
+          return '<span style="color:hotpink">' + firstLetter + '</span>' + restOfWord;
+        });
+    
+        // Join the words back together and set the updated HTML content
+        paragraph.innerHTML = coloredText.join(' ');
+      </script>
+    <div class="ball"></div>
+            <div class="ball" style="--delay:-12s;--size:0.35;--speed:25s;"></div>
+            <div class="ball" style="--delay:-10s;--size:0.3;--speed:15s;"></div>
+    <div class="main" style="width:70vw; margin:auto;">
+    <main>
+        <div class="glass-card">
+         <div class="card-heading">Understanding</div><div class="card-heading2">Algebraic Structures</div>
+         
+         <p class="card-para">Algebraic structure provide a fascinating framework for understanding mathematical systems. In this article, we explore the basics and dive into some interesting examples.</p>
+         <a href="#"><button>READ HERE</button></a>
+        </div>
+        <div class="glass-card">
+            <div class="card-heading">Understanding</div><div class="card-heading2">Algebraic Structures</div>
+         
+            <p class="card-para">Algebraic structure provide a fascinating framework for understanding mathematical systems. In this article, we explore the basics and dive into some interesting examples.</p>
+            <a href="#"><button>READ HERE</button></a>  
+        </div>
+        <div class="glass-card">
+            <div class="card-heading">Understanding</div><div class="card-heading2">Algebraic Structures</div>
+         
+            <p class="card-para">Algebraic structure provide a fascinating framework for understanding mathematical systems. In this article, we explore the basics and dive into some interesting examples.</p>
+            <a href="#"><button>READ HERE</button></a>
+           </div> 
+        </div> 
+       
+    </main>
+    </div>
+    <footer>
+       
+    </footer>
+</body>
+</html>

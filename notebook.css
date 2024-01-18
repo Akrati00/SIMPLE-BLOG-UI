@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
+
+
+header{
+    width:100%;
+    
+}
+.heading{
+    font-family:'David Libre';
+    /* margin:30px 80px; */
+    font-size:70px;
+    font-weight:600;
+    color:rgb(0, 0, 0);
+    /* text-align:center; */
+    text-align:center;
+    margin-top:30px;
+
+}
+
+*, *::before, *::after { box-sizing:border-box }
+
+
+
+
+.ball {
+  
+  --delay:0s;
+  --size:0.4;
+  --speed: 20s;
+  
+  aspect-ratio:1;
+  width:calc( 150% * var(--size) );
+  
+  background: linear-gradient(259.53deg, #bda8f5 6.53%, #f8d8a1 95.34%), rgb(191, 131, 141) 50%;
+  filter:blur( 10vw );
+  
+  border-radius:50%;
+  
+  position:absolute;
+  top:0;
+  left:0;
+  
+  animation: loop var(--speed) infinite linear;
+  animation-delay: var(--delay);
+  transform-origin: 50% 50%;
+  
+  opacity:0.6;
+}
+
+@keyframes loop {
+  0% { transform: translate3D( 3%, 40%, 0 ) rotate(0deg); }
+  5% { transform: translate3D( 8%, 31%, 0 ) rotate(18deg); }
+  10% { transform: translate3D( 22%, 13%, 0 ) rotate(36deg); }
+  15% { transform: translate3D( 40%, 2%, 0 ) rotate(54deg); }
+  20% { transform: translate3D( 46%, 21%, 0 ) rotate(72deg); }
+  25% { transform: translate3D( 50%, 47%, 0 ) rotate(90deg); }
+  30% { transform: translate3D( 53%, 80%, 0 ) rotate(108deg); }
+  35% { transform: translate3D( 59%, 98%, 0 ) rotate(125deg); }
+  40% { transform: translate3D( 84%, 89%, 0 ) rotate(144deg); }
+  45% { transform: translate3D( 92%, 68%, 0 ) rotate(162deg); }
+  50% { transform: translate3D( 99%, 47%, 0 ) rotate(180deg); }
+  55% { transform: translate3D( 97%, 21%, 0 ) rotate(198deg); }
+  60% { transform: translate3D( 80%, 7%, 0 ) rotate(216deg); }
+  65% { transform: translate3D( 68%, 25%, 0 ) rotate(234deg); }
+  70% { transform: translate3D( 59%, 41%, 0 ) rotate(251deg); }
+  75% { transform: translate3D( 50%, 63%, 0 ) rotate(270deg); }
+  80% { transform: translate3D( 38%, 78%, 0 ) rotate(288deg); }
+  85% { transform: translate3D( 21%, 92%, 0 ) rotate(306deg); }
+  90% { transform: translate3D( 3%, 79%, 0 ) rotate(324deg); }
+  100% { transform: translate3D( 0%, 51%, 0 ) rotate(360deg); }
+  
+}
+
+body{
+    overflow-x:hidden;
+    /* overflow-y:hidden; */
+
+}
+
+main{
+    display:flex;
+}
+
+/* .para::first-letter {
+    color: pink;
+  } */
+
+.para{
+    font-family:'David Libre';
+    text-transform: capitalize;
+    align-items:center;
+    text-align:center;
+    margin-top:-30px;
+    font-size:30px;
+    color:rgb(81, 77, 82);
+}
+
+.glass-card{
+    border-radius: 10px;
+border: 2px solid #e0dede;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(217, 217, 217, 0.00) 100%, rgba(217, 217, 217, 0.41) 100%);
+/* background-color: rgb(85, 84, 84); */
+backdrop-filter: blur(25px);
+width:344px;
+height:377px;
+margin-left:26px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+text-align:center;
+
+}
+
+.card-heading{
+    font-family:poppins;
+    font-size:26px;
+    padding-top:38px;
+    margin-right:14px;
+    text-align:left;
+    padding-left:25px;
+    /* padding-left:-12px; */
+    /* padding-right:5px; */
+}
+.card-heading2{
+    font-family:'David libre';
+    font-size:26px;
+    margin-right:14px;
+    text-align:left;
+    padding-left:25px;
+}
+.card-para{
+    font-family:'David Libre';
+    font-size:20px;
+    margin-right:14px;
+    text-align:left;
+    padding-left:25px;
+    color:rgb(113, 117, 117);
+    line-height:1.2;
+
+}
+
+button{
+    border-radius: 6px;
+border: 1px solid rgba(255, 255, 255, 0.72);
+background: linear-gradient(180deg, rgba(255, 141, 217, 0.62) 0%, rgba(217, 217, 217, 0.00) 100%, #c8aef1 100%);
+box-shadow: 0px 4px 5px 0px rgba(244, 151, 196, 0.69);
+padding-top:14px;
+padding-bottom:7px;
+font-family:'David libre';
+font-weight:600;
+padding-right:16px;
+padding-left:16px;
+font-size:19px;
+}
